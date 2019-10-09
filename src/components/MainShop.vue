@@ -8,9 +8,9 @@
             <strong>{{product.description}}</strong>
           </p>
           <p>Price is £ {{product.price}}</p>
-          <a v-bind:href="product.detail">
+          <router-link :to="product.detail">
             <img width="200" :src="product.src" />
-          </a>
+          </router-link>
         </div>
       </ul>
     </div>
