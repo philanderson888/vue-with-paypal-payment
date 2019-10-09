@@ -8,7 +8,7 @@
             <strong>{{product.description}}</strong>
           </p>
           <p>Price is £ {{product.price}}</p>
-          <a href="/product-detail">
+          <a v-bind:href="product.detail">
             <img width="200" :src="product.src" />
           </a>
         </div>
@@ -56,62 +56,74 @@ export default {
         {
           price: 0.03,
           description: "a wonderful product",
-          src: "https://picsum.photos/400/300?random=2"
+          src: "https://picsum.photos/400/300?random=2",
+          detail: "/product-detail"
         },
         {
           price: 0.04,
           description: "a great product",
-          src: "https://picsum.photos/400/300?random=3"
+          src: "https://picsum.photos/400/300?random=3",
+          detail: "/product-detail"
         },
         {
           price: 0.05,
           description: "another product",
-          src: "https://picsum.photos/400/300?random=4"
+          src: "https://picsum.photos/400/300?random=4",
+          detail: "/product-detail"
         },
         {
           price: 0.06,
           description: "a product",
-          src: "https://picsum.photos/400/300?random=5"
+          src: "https://picsum.photos/400/300?random=5",
+          detail: "/product-detail"
         },
         {
           price: 0.03,
           description: "a wonderful product",
-          src: "https://picsum.photos/400/300?random=2"
+          src: "https://picsum.photos/400/300?random=2",
+          detail: "/product-detail"
         },
         {
           price: 0.04,
           description: "a great product",
-          src: "https://picsum.photos/400/300?random=3"
+          src: "https://picsum.photos/400/300?random=3",
+          detail: "/product-detail"
         },
         {
           price: 0.05,
           description: "another product",
-          src: "https://picsum.photos/400/300?random=4"
+          src: "https://picsum.photos/400/300?random=4",
+          detail: "/product-detail"
         },
         {
           price: 0.06,
           description: "a product",
-          src: "https://picsum.photos/400/300?random=5"
+          src: "https://picsum.photos/400/300?random=5",
+          detail: "/product-detail"
         },
         {
           price: 0.03,
           description: "a wonderful product",
-          src: "https://picsum.photos/400/300?random=2"
+          src: "https://picsum.photos/400/300?random=2",
+          detail: "/product-detail"
         },
         {
           price: 0.04,
           description: "a great product",
-          src: "https://picsum.photos/400/300?random=3"
+          src: "https://picsum.photos/400/300?random=3",
+          detail: "/product-detail"
         },
         {
           price: 0.05,
           description: "another product",
-          src: "https://picsum.photos/400/300?random=4"
+          src: "https://picsum.photos/400/300?random=4",
+          detail: "/product-detail"
         },
         {
           price: 0.06,
           description: "a product",
-          src: "https://picsum.photos/400/300?random=5"
+          src: "https://picsum.photos/400/300?random=5",
+          detail: "/product-detail"
         }
       ]
     };
