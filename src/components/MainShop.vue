@@ -2,7 +2,7 @@
   <div>
     <h1>Phil's Shop</h1>
     <div class="shopDisplay">
-      <ul v-for="product in productArray" :key="product">
+      <ul v-for="product in productArray" :key="product.id">
         <div class="shopItem">
           <p>
             <strong>{{product.description}}</strong>
@@ -55,72 +55,84 @@ export default {
       },
       productArray: [
         {
+          id: 1,
           price: 0.03,
           description: "a wonderful product",
           src: "https://picsum.photos/400/300?random=2",
           detail: "/productdetail"
         },
         {
+          id: 2,
           price: 0.04,
           description: "a great product",
           src: "https://picsum.photos/400/300?random=3",
           detail: "/productdetail"
         },
         {
+          id: 3,
           price: 0.05,
           description: "another product",
           src: "https://picsum.photos/400/300?random=4",
           detail: "/productdetail"
         },
         {
+          id: 4,
           price: 0.06,
           description: "a product",
           src: "https://picsum.photos/400/300?random=5",
           detail: "/productdetail"
         },
         {
+          id: 5,
           price: 0.03,
           description: "a wonderful product",
           src: "https://picsum.photos/400/300?random=2",
           detail: "/productdetail"
         },
         {
+          id: 6,
           price: 0.04,
           description: "a great product",
           src: "https://picsum.photos/400/300?random=3",
           detail: "/productdetail"
         },
         {
+          id: 7,
           price: 0.05,
           description: "another product",
           src: "https://picsum.photos/400/300?random=4",
           detail: "/productdetail"
         },
         {
+          id: 8,
           price: 0.06,
           description: "a product",
           src: "https://picsum.photos/400/300?random=5",
           detail: "/productdetail"
         },
         {
+          id: 9,
           price: 0.03,
           description: "a wonderful product",
           src: "https://picsum.photos/400/300?random=2",
           detail: "/productdetail"
         },
         {
+          id: 10,
           price: 0.04,
           description: "a great product",
           src: "https://picsum.photos/400/300?random=3",
           detail: "/productdetail"
         },
         {
+          id: 11,
           price: 0.05,
           description: "another product",
           src: "https://picsum.photos/400/300?random=4",
           detail: "/productdetail"
         },
         {
+          id: 12,
           price: 0.06,
           description: "a product",
           src: "https://picsum.photos/400/300?random=5",
@@ -178,9 +190,11 @@ a {
   color: #42b983;
 }
 .shopDisplay {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  display: grid;
+
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  grid-column-gap: 5vw;
 }
 .shopItem {
   width: 20vw;

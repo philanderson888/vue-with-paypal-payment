@@ -8,7 +8,6 @@
   </div>
 </template>
 <script lang="ts">
-import Vue from "vue";
 export default {
   name: "ProductDetail",
   data: function() {
@@ -33,7 +32,7 @@ export default {
   methods: {
     setLoaded: function() {
       this.loaded = true;
-      window.paypal
+      paypal
         .Buttons({
           createOrder: (data, actions) => {
             return actions.order.create({
