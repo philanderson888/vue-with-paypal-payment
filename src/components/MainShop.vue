@@ -9,7 +9,7 @@
           </p>
           <p>Price is £ {{product.price}}</p>
           <router-link :to="product.detail">
-            <img width="200" :src="product.src" />
+            <img width="100%" :src="product.src" />
           </router-link>
         </div>
       </ul>
@@ -51,20 +51,20 @@ export default {
         price: 0.02,
         description: "a product",
         src: "https://picsum.photos/400/300?random=1",
-        detail: "productdetail/"
+        detail: "/productdetail"
       },
       productArray: [
         {
           price: 0.03,
           description: "a wonderful product",
           src: "https://picsum.photos/400/300?random=2",
-          detail: "/productdetail/"
+          detail: "/productdetail"
         },
         {
           price: 0.04,
           description: "a great product",
           src: "https://picsum.photos/400/300?random=3",
-          detail: "productdetail/"
+          detail: "/productdetail"
         },
         {
           price: 0.05,
