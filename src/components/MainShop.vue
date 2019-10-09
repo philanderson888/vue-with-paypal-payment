@@ -50,14 +50,15 @@ export default {
       product: {
         price: 0.02,
         description: "a product",
-        src: "https://picsum.photos/400/300?random=1"
+        src: "https://picsum.photos/400/300?random=1",
+        detail: "productdetail"
       },
       productArray: [
         {
           price: 0.03,
           description: "a wonderful product",
           src: "https://picsum.photos/400/300?random=2",
-          detail: "/productdetail"
+          detail: "productdetail"
         },
         {
           price: 0.04,
