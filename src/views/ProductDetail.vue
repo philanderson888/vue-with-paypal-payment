@@ -23,8 +23,10 @@ export default {
   },
   mounted: function() {
     const script = document.createElement("script");
+    // live AdUqMkrW2rogd7xux-5XqctWLRHf7Up_qThlNfVban-mbK6EZQG6lIZbJVZq6wycIflPVaM4qfP7rndU
+    // testing AZPdvg_8G7jFbXi83edJviH81Nb4PFcl2mTeYMWJhhn-PiCFBbhQ05gxq0_2ugz7j_zoumCEHl5nHGQe
     script.src =
-      "https://www.paypal.com/sdk/js?client-id=AdUqMkrW2rogd7xux-5XqctWLRHf7Up_qThlNfVban-mbK6EZQG6lIZbJVZq6wycIflPVaM4qfP7rndU";
+      "https://www.paypal.com/sdk/js?client-id=AZPdvg_8G7jFbXi83edJviH81Nb4PFcl2mTeYMWJhhn-PiCFBbhQ05gxq0_2ugz7j_zoumCEHl5nHGQe";
     script.addEventListener("load", this.setLoaded);
     document.body.appendChild(script);
   },
